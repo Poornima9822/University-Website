@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>University Website</title>
+        <meta name="author" content="Poornima Roopasinghe"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="main.css"/>
+
+        <!--Fonts/Poppins-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+        <!--FA Icon-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    </head>
+    <body>
+
+        <!--Home Section-->
+
+        <section class="sub-header">  <!--About us page header/ About us-->
+            <nav>
+               <a href="index.html"><img src="img/logo.png" alt="image"></a> 
+               <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+               </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact US</h1>
+        </section>
+
+        <!--Contact US Page-->
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63363.149494642836!2d80.17961553417958!3d6.986078866850317!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3a9c4c920480d%3A0x49c4447075210649!2zNsKwNTgnNDYuOCJOIDgwwrAxMycwMS40IkU!5e0!3m2!1sen!2slk!4v1657367707608!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>No:55, Thalduwa, Aviissawella</h5>
+                            <p>Locate near to Avissawella town, Sri Lanka</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+94716610196/ 0362222764</h5>
+                            <p>Monday to Friday, From 8AM to 4PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>poornimasbv@gmail.com</h5>
+                            <p>Email Us Your Query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="text" placeholder="Enter Your Email">
+                        <input type="text" placeholder="Enter Your Subject">
+                        <textarea rows="5" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Your Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Footer-->
+       <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>You can learn more about us. Please Follow the Links Below</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> By Poornima Roopasinghe</p>
+       </section>
+        
+
+        <!--JAVASCRIPT-->
+
+        <script>
+            var navLink = document.getElementById('nav-links');
+            function showMenu(){
+                navLink.style.right = "0";
+            }
+            function hideMenu(){
+                navLink.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

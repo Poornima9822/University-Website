@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>University Website</title>
+        <meta name="author" content="Poornima Roopasinghe"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="main.css"/>
+
+        <!--Fonts/Poppins-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+        <!--FA Icon-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    </head>
+    <body>
+
+        <!--Home Section-->
+
+        <section class="sub-header">  <!--About us page eke header ek/ About us-->
+            <nav>
+               <a href="index.html"><img src="img/logo.png" alt="image"></a> 
+               <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+               </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certificate & Online Program for 2022</h1>
+        </section>
+
+        <!--Blog Page-->
+
+        <section class="blog">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="img/certificate.jpg"/>
+                    <h2>Our Certificate & Online Program for 2022</h2>
+                    <p>
+                        Higher education plays an indispensable part in the survival and richness of human civilization by helping people push their limits and empower themselves. Universities provide countless students with well-rounded knowledge that they use to reach towards a better future. With so many well-established Universities around the globe, you may be wondering what some of the largest of them are. The sizes of schools and other similar institutions are usually determined by the number of people who attend them.
+                    </p>
+                    <br/>
+                    <p>
+                        Higher education plays an indispensable part in the survival and richness of human civilization by helping people push their limits and empower themselves. Universities provide countless students with well-rounded knowledge that they use to reach towards a better future. With so many well-established Universities around the globe, you may be wondering what some of the largest of them are. The sizes of schools and other similar institutions are usually determined by the number of people who attend them.
+                    </p>
+                    <br/>
+                    <p>
+                        Higher education plays an indispensable part in the survival and richness of human civilization by helping people push their limits and empower themselves. Universities provide countless students with well-rounded knowledge that they use to reach towards a better future. With so many well-established Universities around the globe, you may be wondering what some of the largest of them are. The sizes of schools and other similar institutions are usually determined by the number of people who attend them.
+                    </p>
+                    <div class="comment-box">
+                        <h3>Leave a Comment</h3>
+                        <form action="" class="comment-form">
+                            <input type="text" placeholder="Enter Name"/>
+                            <input type="text" placeholder="Enter Email"/>
+                            <textarea rows="10" placeholder="Your Comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">Post the Comment</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>20</span> 
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>21</span> 
+                    </div>
+                    <div>
+                        <span>Web Programming</span>
+                        <span>51</span> 
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>28</span> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!--Footer-->
+       <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>You can learn more about us. Please Follow the Links Below</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> By Poornima Roopasinghe</p>
+       </section>
+        
+
+        <!--JAVASCRIPT-->
+
+        <script>
+            var navLink = document.getElementById('nav-links');
+            function showMenu(){
+                navLink.style.right = "0";
+            }
+            function hideMenu(){
+                navLink.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
